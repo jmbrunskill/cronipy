@@ -1,0 +1,2 @@
+#This example crontab runs every minute. Logs are output to /proc/1/fd/1 as this will show up in Azure App Server Log Stream (Essentially writing to the docker container's standard output)
+* * * * * /usr/src/app/example_cron_job.sh > /proc/1/fd/1 2>&1
